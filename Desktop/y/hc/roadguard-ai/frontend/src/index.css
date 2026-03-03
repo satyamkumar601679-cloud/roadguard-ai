@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.severity-badge {
+  @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold;
+}
+
+.severity-high {
+  @apply bg-red-100 text-red-800;
+}
+
+.severity-medium {
+  @apply bg-yellow-100 text-yellow-800;
+}
+
+.severity-low {
+  @apply bg-green-100 text-green-800;
+}
+
+.map-marker-high {
+  background-color: #ef4444;
+}
+
+.map-marker-medium {
+  background-color: #f59e0b;
+}
+
+.map-marker-low {
+  background-color: #10b981;
+}
