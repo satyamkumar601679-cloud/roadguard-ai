@@ -1,10 +1,9 @@
 import { createClient } from '@supabase/supabase-js'
 
-const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL || 'https://hthdyoivevuztqdeqrai.supabase.co'
-const SUPABASE_KEY = import.meta.env.VITE_SUPABASE_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh0aGR5b2l2ZXZ1enRxZGVxcmFpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM4MTE4MTMsImV4cCI6MjA4OTM4NzgxM30.d76qkKuQfn45sjbhXHAZs6u_-MyeussI8C0YYqFMg5A'
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL || 'https://wwadcphthdzxgigiyhwd.supabase.co'
+const SUPABASE_KEY = import.meta.env.VITE_SUPABASE_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind3YWRjcGh0aGR6eGdpZ2l5aHdkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM4MjcxNzgsImV4cCI6MjA4OTQwMzE3OH0.BIO_z84YBdopaKaEfgxouV6V8iQqThHJWvdLF30At-8'
 
-export const supabase = createClient("https://hthdyoivevuztqdeqrai.supabase.co","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh0aGR5b2l2ZXZ1enRxZGVxcmFpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM4MTE4MTMsImV4cCI6MjA4OTM4NzgxM30.d76qkKuQfn45sjbhXHAZs6u_-MyeussI8C0YYqFMg5A" )
-
+export const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 // Helper function to fetch road reports
 export async function fetchRoadReports() {
   try {
