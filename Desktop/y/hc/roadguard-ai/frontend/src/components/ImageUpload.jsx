@@ -114,7 +114,7 @@ export default function ImageUpload({ onDetectionComplete, setLoading, showToast
       formData.append('latitude', latitude || '0')
       formData.append('longitude', longitude || '0')
 
-      const response = await axios.post('http://localhost:5000/detect', formData, {
+      const response = await axios.post('https://roadguard-backend-dw41.onrender.com/detect', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
         timeout: 30000 // 30 second timeout
       })
